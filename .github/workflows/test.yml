@@ -1,0 +1,22 @@
+name: Run elisp script
+
+on:
+  push:
+    paths:
+      - 'subfolder/**/*.tex'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup emacs
+        uses: purcell/setup-emacs@master
+        with:
+          version: 27.1
+
+      - name: Run elisp script
+        run: emacs --batch --load path-to-your-script.el
