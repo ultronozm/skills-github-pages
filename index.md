@@ -9,5 +9,7 @@ Here's some math: $x+y=z$.
 
 {{ site.baseurl }}{% link test.html %}
 
+[test](test.html)
+
 Display math:
 $$x+y = \frac{z}{w}.$$
