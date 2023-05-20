@@ -1,0 +1,42 @@
+\documentclass[reqno]{amsart}  \input{common.tex}
+
+\numberwithin{equation}{section}
+\numberwithin{theorem}{section}
+\begin{document}
+
+\section{Stuff}
+
+\subsection{Do it}
+
+By Theorem \ref{theorem:20230514224237}
+
+
+
+This is a test.  $x=y$.
+
+\begin{equation}
+\frac{x}{y}
+\end{equation}
+
+\begin{theorem}\label{theorem:20230514224237}
+Test
+\end{theorem}
+
+\begin{equation}
+do it
+\end{equation}
+
+
+\begin{equation}\label{eqn:20230514223822}
+x = y + z
+\end{equation}
+
+\begin{align}
+  x &= y \label{testing} \\
+  &= z \label{testing2}
+\end{align}
+
+\begin{theorem}\label{theorem:20230514234845}
+  Test.
+\end{theorem}
+\end{document}
