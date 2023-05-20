@@ -3,7 +3,8 @@ name: Run elisp script
 on:
   push:
     paths:
-      - 'tex/**/*.tex'
+      - 'subfolder/**/*.tex'
+  workflow_dispatch:
 
 jobs:
   build:
